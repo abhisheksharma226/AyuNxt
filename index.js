@@ -4,11 +4,13 @@ dotenv.config();
 const path = require("path");
 const express = require("express");
 
+
 const startupRoute = require("./routes/startup");
 
 
 
 const mongoose = require("mongoose");
+
 
 
 const app = express();
@@ -42,7 +44,9 @@ app.use(express.static('public'));
 
 //middlewares
 app.use(express.urlencoded({ extended: false }));
+
 app.use(express.json());
+
 
 
 

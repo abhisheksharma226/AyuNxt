@@ -24,7 +24,7 @@ router.post('/signup' , async(req , res) => {
             email,
             password,
         });
-        return res.redirect('/');
+        return res.redirect('startupHome');
 
     }catch(error){
         return res.render("startupSignup" , {
@@ -41,9 +41,9 @@ router.post('/signin' , async(req , res) => {
 
      try{
         
-         const token = await Startup.matchPasswordAndGenerateToken({ email, password });
-        return res.redirect('/');
-        //  return res.cookie('token' , token).redirect('/');
+        const token = await Startup.matchPasswordAndGenerateToken({ email, password });
+        return res.cookie('token' , token).redirect('startupHome');
+        
         
         }catch (error){
             // console.error("Error in /signin:", error);
@@ -55,6 +55,15 @@ router.post('/signin' , async(req , res) => {
 
     })
 
+
+
+router.get('/criteria' , (req , res) => {
+    return res.render('startupCriteria')
+})
+
+router.get('/startupHome' , (req , res) => {
+    return res.render('startupHome')
+})
 
 
 router.get('/logout' ,(req , res) => {
