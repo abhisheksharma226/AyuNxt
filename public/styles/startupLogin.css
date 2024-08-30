@@ -1,0 +1,122 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('/images/startupLogin/background.jpg');
+    backdrop-filter: blur(12px);
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .auth-box {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+  }
+  
+  .auth-image {
+    width: 40%;
+    background-color: #003366; /* Background color for the image section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .auth-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .auth-card {
+    width: 60%;
+    padding: 40px 20px;
+    text-align: left;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .input-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #003366;
+    font-size: 1.2em;
+  }
+  
+  .auth-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #003366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .auth-btn:hover {
+    background-color: #00509e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .auth-link {
+    margin-top: 20px;
+    color: #0e0e0f;
+  }
+  
+  .auth-link a {
+    color: #00509e;
+    text-decoration: underline;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+  

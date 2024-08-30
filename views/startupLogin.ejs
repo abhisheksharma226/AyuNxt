@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/startupLogin.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-box">
+        <!-- Left side with the image -->
+        <div class="auth-image">
+            <img src="/images/startupLogin/bg.jpg" alt="Logo">
+        </div>
+        <!-- Right side with the login form -->
+        <div class="auth-card">
+            <h2>Login</h2>
+        <form id="loginForm" action="/startup/signin" method="post">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <i class="fas fa-lock"></i>
+          </div>
+          <button type="submit" class="auth-btn">Login</button>
+          <p class="auth-link">
+            Don't have an account? <a href="/startup/signup">Sign Up</a>
+          </p>
+        </form>
+        
+      </div>
+    </div>
+  </body>
+</html>
