@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Step Startup Registration Form</title>
+    <link rel="stylesheet" href="/styles/startupRegister.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-container">
+        <div class="progress-indicator">
+          <span id="currentStep">1</span>&nbsp - &nbsp<span id="totalSteps"
+            >6</span
+          >
+        </div>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <form class="registration-form" id="registrationForm" enctype="multipart/form-data">
+        <!-- Step 1: Sector Information -->
+        <!-- Step 1: Sector Information -->
+        <div class="form-step form-step-active">
+          <h2>Sector Information</h2>
+          <div class="input-group">
+            <label for="sector">Sector</label>
+            <select id="sector" name="sector" required>
+              <option value="" disabled selected>Select Sector</option>
+              <option value="ayurveda">Ayurveda</option>
+              <option value="yoga-naturopathy">Yoga & Naturopathy</option>
+              <option value="unani">Unani</option>
+              <option value="siddha">Siddha</option>
+              <option value="homeopathy">Homeopathy</option>
+            </select>
+            <i class="fas fa-industry"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="sub-sector"
+              name="subsector"
+              placeholder="Sub Sector"
+              required
+            />
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!-- Step 2: Company Details -->
+        <div class="form-step">
+          <h2>Company Details</h2>
+          <div class="input-group">
+            <input
+              type="text"
+              id="company-name"
+              name="companyname"
+              placeholder="Company Name"
+              required
+            />
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="brand-name"
+              name="brandname"
+              placeholder="Brand Name"
+              required
+            />
+            <i class="fas fa-tag"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="url"
+              id="website"
+              name="website"
+              placeholder="Website/URL"
+              required
+            />
+            <i class="fas fa-globe"></i>
+          </div>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!-- Step 3: Personal Details -->
+        <div class="form-step">
+          <h2>Personal Details</h2>
+          <div class="input-group">
+            <input
+              type="text"
+              id="applicant-name"
+              name="applicantname"
+              placeholder="Applicant Name"
+              required
+            />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="Mobile No"
+              required
+            />
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Address"
+              required
+            />
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="pincode"
+              name="pincode"
+              placeholder="Pin Code"
+              required
+            />
+            <i class="fas fa-map-pin"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="State"
+              required
+            />
+            <i class="fas fa-map"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City/Village"
+              required
+            />
+            <i class="fas fa-city"></i>
+          </div>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!-- Step 4: Founder Details -->
+        <div class="form-step">
+          <h2>Founder Details</h2>
+          <div class="input-group">
+            <input
+              type="text"
+              id="founder-name"
+              name="foundername"
+              placeholder="Founder Name"
+              required
+            />
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="founder-email"
+              name="founderemail"
+              placeholder="Founder Email"
+              required
+            />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="tel"
+              id="founder-mobile"
+              name="foundermobile"
+              placeholder="Founder Mobile"
+              required
+            />
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="founder-address"
+              name="founderaddress"
+              placeholder="Founder Residential Address"
+              required
+            />
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="pan"
+              name="pan"
+              placeholder="PAN NUMBER"
+              required
+            />
+            <i class="fas fa-id-card"></i>
+          </div>
+          <div class="input-group">
+            <input type="file" id="upload-pan" name="uploadpan" required />
+            <i class="fas fa-upload"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="aadhar"
+              name="aadhar"
+              placeholder="Aadhar NUMBER"
+              required
+            />
+            <i class="fas fa-id-card-alt"></i>
+          </div>
+          <div class="input-group">
+            <input
+              type="file"
+              id="upload-aadhar"
+              name="uploadaadhar"
+              required
+            />
+            <i class="fas fa-upload"></i>
+          </div>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!-- Step 5: Startup Details -->
+        <div class="form-step">
+          <h2>Startup Details</h2>
+          <div class="input-group">
+            <textarea
+              id="product-description"
+              name="productdescription"
+              placeholder="Describe Your Product/Service"
+              required
+            ></textarea>
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="scalability"
+              name="scalability"
+              placeholder="Scalability of Your Product/Service"
+              required
+            ></textarea>
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="social-impact"
+              name="socialimpact"
+              placeholder="Social Impact Created by Your Startup"
+              required
+            ></textarea>
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="economic-impact"
+              name="economicimpact"
+              placeholder="Economic Impact of Your Product/Service"
+              required
+            ></textarea>
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="environmental-impact"
+              name="environmentalimpact"
+              placeholder="Environmental Impact of Your Startup"
+              required
+            ></textarea>
+            <i class="fas fa-leaf"></i>
+          </div>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!-- Step 6: Required Documents -->
+        <div class="form-step">
+          <h2>Required Documents</h2>
+          <div class="input-group">
+            <label for="incorporation"
+              >Upload Certificate of Incorporation/Partnership Deed</label
+            >
+            <input
+              type="file"
+              id="incorporation"
+              name="incorporation"
+              required
+            />
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="input-group">
+            <label for="trade-registrations"
+              >Upload Trade Specific Registrations</label
+            >
+            <input
+              type="file"
+              id="trade-registrations"
+              name="traderegistrations"
+              required
+            />
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="input-group">
+            <label for="financial-statements"
+              >Upload Financial Statements (P&L Statement and Balance
+              Sheet)</label
+            >
+            <input
+              type="file"
+              id="financial-statements"
+              name="financialstatements"
+              required
+            />
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="input-group">
+            <label for="startup-video">Upload a Video About Your Startup</label>
+            <input
+              type="file"
+              id="startup-video"
+              name="startupvideo"
+              required
+            />
+            <i class="fas fa-video"></i>
+          </div>
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/scripts/startupRegister.js"></script>
+  </body>
+</html>

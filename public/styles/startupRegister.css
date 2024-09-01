@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-step {
+    display: none;
+  }
+  
+  .form-step.form-step-active {
+    display: block;
+  }
+  
+  .form-section h2 {
+    font-size: 1.5em;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+  }
+  
+  .input-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .input-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #003366;
+    font-size: 1.2em;
+  }
+  .input-group select {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+    appearance: none; /* Removes default styling */
+  }
+  
+  .input-group select:focus {
+    border-color: #003366;
+  }
+  
+  button {
+    padding: 15px 25px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #003366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00509e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prev-btn {
+    background-color: #003366;
+  }
+  
+  .prev-btn:hover {
+    background-color: #00509e;
+  }
+  
+  .progress-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .progress-indicator {
+    font-size: 1.2em;
+    color: #003366;
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #003366;
+    width: 0%; /* Will be updated by JS */
+    border-radius: 5px;
+  }
+  
+  .form-step {
+    display: none;
+    padding: 20px;
+  }
+  
+  .form-step-active {
+    display: block;
+  }
+  
+  button {
+    padding: 10px 20px; /* Adjusted size */
+    font-size: 1em; /* Adjusted size */
+    color: #fff;
+    background-color: #003366;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00509e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prev-btn {
+    background-color: #003366;
+  }
+  
+  .prev-btn:hover {
+    background-color: #00509e;
+  }
+  
+  .submit-btn {
+    background-color: #28a745; /* Green color for submit button */
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  

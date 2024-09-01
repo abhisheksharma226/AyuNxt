@@ -5,14 +5,16 @@ const router = Router();
 
 
 router.get('/signup' , (req , res) => {
-    return res.render('startupSignup')
+    return res.render('startupSignup');
 })
 
 router.get('/signin' , (req , res) => {
-    return res.render('startupLogin')
+    return res.render('startupLogin');
 })
 
-router.get('/')
+router.get('/startupRegister' , (req , res) => {
+    return res.render('startupRegister');
+})
 
 
 router.post('/signup' , async(req , res) => {
@@ -24,7 +26,7 @@ router.post('/signup' , async(req , res) => {
             email,
             password,
         });
-        return res.redirect('startupHome');
+        return res.redirect('startupRegister');
 
     }catch(error){
         return res.render("startupSignup" , {
